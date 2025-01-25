@@ -119,7 +119,7 @@ static func rename_profile(old_profile_name: String, new_profile_name: String) -
 
 	# Remove old profile entry, replace it with new name entry in the ModLoaderStore
 	ModLoaderStore.user_profiles.erase(old_profile_name)
-	ModLoaderStore.user_profiles[profile_renamed] = profile_renamed
+	ModLoaderStore.user_profiles[new_profile_name] = profile_renamed
 
 	# Set it as the current profile if it was the current profile
 	if ModLoaderStore.current_user_profile.name == old_profile_name:
