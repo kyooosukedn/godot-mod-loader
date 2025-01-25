@@ -12,8 +12,6 @@ const FILE_PATH_USER_PROFILES := "user://mod_user_profiles.json"
 # API profile functions
 # =============================================================================
 
-export var name := ""
-export var mod_list := {}
 
 # Enables a mod - it will be loaded on the next game start
 #
